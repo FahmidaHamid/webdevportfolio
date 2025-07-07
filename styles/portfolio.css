@@ -21,6 +21,18 @@
 .dark2 {
   color: #474747;
 }
+.secondary-background {
+  background-color: #fff8f3;
+}
+.section-title {
+  color: #181818;
+  font-size: 35px;
+  font-weight: bold;
+}
+.section-description {
+  font-size: 18px;
+  color: #757575;
+}
 .nav-title {
   font-weight: 800;
   font-size: 45px;
@@ -71,7 +83,24 @@ nav li a {
 }
 .banner-description {
   font-size: 20px;
+  color: #757575;
 }
 .banner-content {
   max-width: 580px;
+}
+.aboutme {
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
+  margin-top: 130px;
+}
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.about-items {
+  display: flex;
+  justify-content: space-evenly;
+  color: #757575;
+  font-weight: 600;
 }
