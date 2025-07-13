@@ -7,6 +7,10 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+.primary-color {
+  color: #4e47ff;
+}
+
 .header {
   background-image: url("../images/developer.png"),
     url("../images/header_bg.png");
@@ -49,7 +53,7 @@ nav {
 nav ul {
   display: flex;
   gap: 40px;
-  justify-content: end;
+  /* justify-content: end; */
   align-items: center;
 }
 nav ul li {
