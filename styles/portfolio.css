@@ -141,7 +141,8 @@ main {
 }
 .skills-container {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .skill-container {
@@ -154,6 +155,9 @@ main {
 }
 .item-title {
   text-decoration: underline;
+}
+.hide {
+  display: none;
 }
 footer {
   padding: 130px 230px;
@@ -172,4 +176,90 @@ footer textarea {
   border-radius: 5px;
   display: block;
   background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left; */
+  }
+  .skills-container,
+  .about-items {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .skills-section {
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .summary {
+    border-radius: 10px;
+    padding: 20px 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: #fdfaf7;
+  }
+  .resume_container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .aboutme {
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .banner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+  }
+  nav {
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* justify-content: end; */
+    align-items: center;
+  }
+  .banner-greetings {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .banner-title {
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .banner-description {
+    font-size: 18px;
+  }
+  .btn-primary {
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 2px;
+  }
+  img {
+    padding: 10px;
+    width: calc(100% -2 * 10px);
+  }
 }
